@@ -5,6 +5,9 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Angular" level="application" />
+    <orderEntry type="library" name="Node Js Globals" level="application" />
+    <orderEntry type="library" name="Node.js v0.10.32 Core Modules" level="application" />
   </component>
 </module>
 
