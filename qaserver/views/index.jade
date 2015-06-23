@@ -3,13 +3,11 @@ extends layout
 block content
   h1= title
   p Welcome to Apixio QA Server
-  p 
-    |1 
-    |a(href="/runtest/minimal") Run minimal test suites
-  p 
-    |2 
-    |a(href="/runtest/hcc") Run HCC test suites
-  p 
-    |3 
-    |a(href="/runtest/cmp") Run CMP test suites
+ul#books
+  li: a(href="#book-a") Book A
+  li: a(href="#book-b") Book B
+  ul#testsuites
+    li: a(href="/runtest/minimal") Run minimal test suites
+    li: a(href="/runtest/hcc") Run HCC test suites
+    li: a(href="/runtest/cmp") Run CMP test suites
   
