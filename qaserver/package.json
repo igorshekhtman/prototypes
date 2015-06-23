@@ -1,0 +1,28 @@
+{
+  "name": "qaserver",
+  "version": "1.0.0",
+  "description": "Express Server to Run Protractor Tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Apixio/prototypes.git"
+  },
+  "keywords": [
+    "qa",
+    "protractor",
+    "express",
+    "node"
+  ],
+  "author": "Igor and Reza",
+  "license": "commercial",
+  "bugs": {
+    "url": "https://github.com/Apixio/prototypes/issues"
+  },
+  "homepage": "https://github.com/Apixio/prototypes",
+  "dependencies": {
+    "express": "^4.13.0"
+  }
+}
