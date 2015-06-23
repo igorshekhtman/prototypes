@@ -3,13 +3,20 @@ extends layout
 block content
   h1= title
   p Welcome to Apixio QA Server
-  p 
-  "1." 
-  a(href="/runtest/minimal") Run minimal test suites
-  p
-  "2." 
-  a(href="/runtest/hcc") Run HCC test suites
-  p
-  "3." 
-  a(href="/runtest/cmp") Run CMP test suites
+  table
+    tr
+      td 
+        1.
+      td 
+        a(href="/runtest/minimal") Run minimal test suites
+    tr
+      td
+        2.
+      td  
+        a(href="/runtest/hcc") Run HCC test suites
+    tr
+      td
+        3.
+      td  
+        a(href="/runtest/cmp") Run CMP test suites
   
