@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Apixio QA Server' });
 });
 router.get('/runtest/minimal', function(req, res, next) {
   exec('/usr/local/share/protractor/minimal/run_protractor.sh', function(error, output) {
