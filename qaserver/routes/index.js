@@ -6,30 +6,14 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Apixio QA Server' });
 });
-router.get('/runtest/minimal', function(req, res, next) {
-  exec('/usr/local/share/protractor/minimal/run_protractor.sh', function(error, output) {
-    if (error)
-      res.send('Error has happened'+error);
-    else 
-      res.send(output);  
-  });
-});
-router.get('/runtest/hcc', function(req, res, next) {
-  exec('/usr/local/share/protractor/hcc/run_protractor.sh', function(error, output) {
-    if (error)
-      res.send('Error has happened'+error);
-    else 
-      res.send(output);  
-  });
-});
-router.get('/runtest/cmp', function(req, res, next) {
-  exec('/usr/local/share/protractor/cmp/run_protractor.sh', function(error, output) {
-    if (error)
-      res.send('Error has happened'+error);
-    else 
-      res.send(output);  
-  });
-});
 
+router.get('/runtest/:test_suite', function(req, res, next) {
+  exec('/usr/local/share/protractor/'+req.params.test_suite+'/run_protractor.sh', function(error, output) {
+    if (error)
+      res.send('Error has happened when running test suites '+req.params.test_suite+' '+error);
+    else 
+      res.send('<pre>'+output+'</pre>');  
+  });
+});
 
 module.exports = router;
