@@ -5,6 +5,6 @@ exports.config={
 	framework : 'mocha',
 	
 	
-	specs:['empty.spec.js']
-	//specs:['specs/*.spec.js']
+	//specs:['empty.spec.js']
+	specs:['specs/*.spec.js']
 };
