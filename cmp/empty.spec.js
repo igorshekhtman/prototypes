@@ -1,1 +1,1 @@
-console.log("minimal test spec");
+console.log("cmp test spec");
