@@ -12,7 +12,7 @@ router.get('/runtest/:test_suite', function(req, res, next) {
     if (error)
       res.send('Error has happened when running test suites '+req.params.test_suite+' '+error);
     else 
-      res.send('<pre>'+output+'</pre>');  
+      res.render('test_results', { title: 'Apixio QA Server', test_suite:req.params.test_suite, test_results:output});  
   });
 });
 
