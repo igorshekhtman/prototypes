@@ -14,7 +14,7 @@ router.get('/runtest/:test_suite', function(req, res, next) {
       res.render('test_results', { title: 'STATUS - FAILED', test_suite:req.params.test_suite, test_results:output});
       }
     else 
-      res.render('test_results', { title: 'Apixio QA Server', test_suite:req.params.test_suite, test_results:output});  
+      res.render('test_results', { title: 'STATUS - PASSED', test_suite:req.params.test_suite, test_results:output});  
   });
 });
 
