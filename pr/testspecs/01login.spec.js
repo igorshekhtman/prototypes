@@ -56,6 +56,7 @@ describe('Apixio HCC homepage', function() {
     //var pwlabel = 
     
     expect(browser.driver.getTitle()).toEqual('Apixio HCC Optimizer');
+    expect(browser.driver.getTitle()).toEqual('Apixio HCC Optimizer');
     
     
     var user_field = element(by.css('input[name="username"]'));
