@@ -7,7 +7,7 @@ exports.config={
 	//	reporter:'spec',
 	//	enableTimeouts:false
 	//},
-	framework:'mocha',
+	//framework:'mocha',
 	//specs:['empty.spec.js']
 	specs:['testspecs/*.spec.js']
 };
