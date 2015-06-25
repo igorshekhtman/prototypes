@@ -3,19 +3,18 @@
  */
  
  
-console.log("progress report test spec");
+//console.log("progress report test spec");
 
 
-/**
-describe('angularjs homepage', function() {
-  it('should greet the named user', function() {
-    browser.get('http://www.angularjs.org');
 
-    element(by.model('yourName')).sendKeys('Julie');
+describe('Apixio HCC homepage', function() {
+  it('should open HCC application', function() {
+    browser.get('https://hccstage2.apixio.com/account/login/');
 
-    var greeting = element(by.binding('yourName'));
+    //element(by.model('yourName')).sendKeys('Julie');
 
-    expect(greeting.getText()).toEqual('Hello Julie!');
+    //var greeting = element(by.binding('yourName'));
+
+    //expect(greeting.getText()).toEqual('Hello Julie!');
   });
 });
-*/
