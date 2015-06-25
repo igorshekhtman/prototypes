@@ -6,5 +6,5 @@ exports.config={
 	
 	
 	//specs:['empty.spec.js']
-	specs:['specs/*.spec.js']
+	specs:['testspecs/*.spec.js']
 };
