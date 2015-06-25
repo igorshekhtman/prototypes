@@ -1,9 +1,11 @@
 /**
  * Created by rezaalemy on 15-04-15.
  */
-var login = require('../pages/login'),
-    mock = require("../mock-helper"),
-    verbose = false,
+
+
+//var login = require('../pages/login'),
+//    mock = require("../mock-helper"),
+var verbose = true,
     lastLogs = [],
     expect = require('chai').use(require('chai-as-promised')).expect;
 
