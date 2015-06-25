@@ -8,9 +8,9 @@
 describe('Apixio HCC homepage', function() {
 
   it('should open HCC application', function() {
-    //browser.get('google.com');
+    browser.get('google.com');
     
-    console.log("progress report test spec - Igor");    
+    //console.log("progress report test spec - Igor");    
 
 
   });
