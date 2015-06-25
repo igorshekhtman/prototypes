@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 router.get('/runtest/:test_suite', function(req, res, next) {
   exec('/usr/local/share/protractor/'+req.params.test_suite+'/run_protractor.sh', function(error, output) {
     if (error) {
-      res.send('Error occurred when running test suites: '+req.params.test_suite+'   Specific error was: '+error);
+      //res.send('Error occurred when running test suites: '+req.params.test_suite+'   Specific error was: '+error);
       res.render('test_results', { title: 'STATUS - FAILED', test_suite:req.params.test_suite, test_results:output});
       }
     else 
