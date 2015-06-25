@@ -3,11 +3,12 @@
  */
 
 
-var login = require('../pages/login');
-//    mock = require("../mock-helper"),
-//    verbose = true,
-//    lastLogs = [];
+var login = require('../pages/login'),
+    verbose = true,
+    lastLogs = [];
 //    expect = require('chai').use(require('chai-as-promised')).expect;
+
+//    mock = require("../mock-helper"),
 
 console.log("progress report test spec");
 
