@@ -3,8 +3,11 @@
  */
  
  
-console.log("progress report test spec - Igor");
+//console.log("progress report test spec - Igor");
 
+describe('Apixio HCC homepage', function() {
+
+});
 
 
 //describe('Apixio HCC homepage', function() {
