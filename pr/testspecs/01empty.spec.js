@@ -3,9 +3,9 @@
  */
 
 
-//var login = require('../pages/login'),
-//    mock = require("../mock-helper"),
-var verbose = true,
+var login = require('../pages/login'),
+    mock = require("../mock-helper"),
+    verbose = true,
     lastLogs = [];
 //    expect = require('chai').use(require('chai-as-promised')).expect;
 
