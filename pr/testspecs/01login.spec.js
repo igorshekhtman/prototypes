@@ -16,5 +16,5 @@ console.log("progress report test spec");
     //var greeting = element(by.binding('yourName'));
 
     //expect(greeting.getText()).toEqual('Hello Julie!');
-  });
-});
+//  });
+//});
