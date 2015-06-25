@@ -24,10 +24,11 @@ describe('Apixio HCC homepage', function() {
     browser.driver.get('https://hccstage2.apixio.com/account/login/');
 
     //element(by.model('yourName')).sendKeys('Julie');
-    element(by.css('input[name="username"]')).getAttribute('value');
+    //element(by.css('input[name="username"]')).getAttribute('value');
 
     //var greeting = element(by.binding('yourName'));
 
     //expect(greeting.getText()).toEqual('Hello Julie!');
+    expect(browser.driver.getTitle()).toEqual('Apixio Login Page');
   });
 });
