@@ -62,8 +62,8 @@ describe('Apixio HCC homepage', function() {
     //user_field.sendKeys('opprouterpl5@apixio.net');
     var pswd_field = element(by.css('input[name="password"]'));
     //pswd_field.sendKeys('apixio.123');
-    // var login_btn  = element(by.css('input[name="login"]'));
-    element(by.css('input[name="login"]')).click();
+    var login_btn  = element(by.css('input[name="login"]'));
+    //element(by.css('input[name="login"]')).click();
     //login_btn.click();
     
     //expect(browser.driver.getLabel()).toEqual('Username');
