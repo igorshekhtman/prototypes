@@ -8,6 +8,11 @@ exports.config={
       
     
      browser.ignoreSynchronization = true;
+     browser.driver.manage().window().maximize();
+     browser.getCapabilities().then(function (cap) {
+  	 browser.browserName = cap.caps_.browserName;
+  	 browser.browserVersion = cap.caps_.version;
+	 });
 
 	 },
 	
