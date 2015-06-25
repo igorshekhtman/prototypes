@@ -29,6 +29,6 @@ describe('Apixio HCC homepage', function() {
     //var greeting = element(by.binding('yourName'));
 
     //expect(greeting.getText()).toEqual('Hello Julie!');
-    expect(browser.driver.getTitle()).toEqual('Apixio Login Page');
+    expect(browser.driver.getTitle()).toEqual('Apixio HCC Optimizer');
   });
 });
