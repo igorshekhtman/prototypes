@@ -4,6 +4,9 @@
  
  
 console.log("progress report test spec");
+
+
+/**
 describe('angularjs homepage', function() {
   it('should greet the named user', function() {
     browser.get('http://www.angularjs.org');
@@ -15,3 +18,4 @@ describe('angularjs homepage', function() {
     expect(greeting.getText()).toEqual('Hello Julie!');
   });
 });
+*/
