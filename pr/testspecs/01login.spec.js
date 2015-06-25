@@ -29,7 +29,35 @@ describe('Apixio HCC homepage', function() {
     //var greeting = element(by.binding('yourName'));
 
     //expect(greeting.getText()).toEqual('Hello Julie!');
+    
+    /**
+   // getUser: function() {
+   //     return element(by.css('input[name="username"]')).getAttribute('value');
+    },
+    setUser:function(value){
+        return element(by.css('input[name="username"]')).sendKeys(value);
+    },
+    getPass: function() {
+        return element(by.css('input[name="password"]')).getAttribute('value');
+    },
+    setPass:function(value){
+        return element(by.css('input[name="password"]')).sendKeys(value);
+    },
+    submit:function(){
+        return element(by.css('input[type="submit"]')).click();
+    },
+    */
+    
+    
+    
+    
+    
+    //var userlabel = 
+    //var pwlabel = 
+    
     expect(browser.driver.getTitle()).toEqual('Apixio HCC Optimizer');
+    expect(browser.driver.getLabel()).toEqual('Username');
+    expect(browser.driver.getLabel()).toEqual('Password');
     
     
     
