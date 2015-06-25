@@ -22,6 +22,7 @@ exports.config={
 	//},
 	//framework:'mocha',
 	//specs:['empty.spec.js']
-	specs:['testspecs/*.spec.js']
+	//specs:['testspecs/*.spec.js']
+	specs:['specs/*.spec.js']
 };
 
