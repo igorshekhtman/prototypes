@@ -5,8 +5,8 @@
 
 var login = require('../pages/login'),
     verbose = true,
-    lastLogs = [];
-//    expect = require('chai').use(require('chai-as-promised')).expect;
+    lastLogs = [],
+    expect = require('chai').use(require('chai-as-promised')).expect;
 
 //    mock = require("../mock-helper"),
 
