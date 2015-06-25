@@ -67,11 +67,7 @@ describe('Apixio HCC homepage', function() {
     //element(by.css('input[name="login"]')).click();
     login_btn.click();
     
-    //expect(browser.driver.getLabel()).toEqual('Username');
-    //expect(browser.driver.getLabel()).toEqual('Password');
-    
-    
-    
+    expect(browser.driver.getTitle()).contains('HCC');    
     
   });
 });
