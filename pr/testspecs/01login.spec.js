@@ -63,6 +63,7 @@ describe('Apixio HCC homepage', function() {
     var pswd_field = element(by.css('input[name="password"]'));
     //pswd_field.sendKeys('apixio.123');
     var login_btn  = element(by.css('input[name="login"]'));
+    login_btn.click();
     
     //expect(browser.driver.getLabel()).toEqual('Username');
     //expect(browser.driver.getLabel()).toEqual('Password');
