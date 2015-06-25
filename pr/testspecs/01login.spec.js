@@ -9,6 +9,7 @@ describe('Apixio HCC homepage', function() {
 
   it('should open HCC application', function() {
   //  browser.get('google.com');
+    browser.driver.get('https://hccstage2.apixio.com/account/login/');
     
     console.log("progress report test spec - Igor");    
 
