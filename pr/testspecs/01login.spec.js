@@ -13,7 +13,7 @@ describe('Apixio HCC homepage', function() {
     console.log("progress report test spec - Igor");    
 
 
-  });
+  //});
 
 });
 
