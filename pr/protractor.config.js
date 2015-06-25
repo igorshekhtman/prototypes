@@ -9,7 +9,7 @@ exports.config={
     
      browser.ignoreSynchronization = true;
 
-	 };
+	 },
 	
 	//mochaOpts:{
 	//	reporter:'spec',
