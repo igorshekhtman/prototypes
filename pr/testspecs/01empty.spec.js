@@ -4,6 +4,7 @@
 
 
 var login = require('../pages/login'),
+    mock = require("../mock-helper"),
     verbose = true,
     lastLogs = [];
     
