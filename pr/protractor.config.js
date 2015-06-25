@@ -1,6 +1,6 @@
 exports.config={
 	capabilities: {
-		'browserName': 'chrome'
+		browserName: 'chrome'
 	},
 	//mochaOpts:{
 	//	reporter:'spec',
@@ -10,3 +10,4 @@ exports.config={
 	//specs:['empty.spec.js']
 	specs:['testspecs/*.spec.js']
 };
+
