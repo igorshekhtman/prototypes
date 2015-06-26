@@ -5,7 +5,7 @@ var login = require('../pages/login'),
     mock = require("../mock-helper"),
     verbose = false,
     lastLogs = [],
-    expect = require('chai').use(require('chai-as-promised')).expect;
+    expect = require('/opt/protractor/prototypes/qaserver/node_modules/chai').use(require('/opt/protractor/prototypes/qaserver/node_modules/chai-as-promised')).expect;
 
 describe("Progress report Login page", function () {
 
