@@ -1,9 +1,9 @@
 /**
  * Created by rezaalemy on 15-04-05.
  */
-var _ = require("lodash"),
-    util=require("util"),
-    q = require("q");
+var _ = require("/opt/protractor/prototypes/qaserver/node_modules/lodash/lodash"),
+    util=require("/opt/protractor/prototypes/qaserver/node_modules/util/util"),
+    q = require("/opt/protractor/prototypes/qaserver/node_modules/q/q");
 
 module.exports = {
     //usage: mokServiceFunction
