@@ -24,6 +24,18 @@ describe("Progress report Login page", function () {
             return expect(browser.getTitle()).to.eventually.eq(login.pageTitle);
         });
     });
+    
+    it("should be accessible at " + login.httpsAddress, function () {
+        return browser.get(login.httpsAddress).then(function () {
+            return expect(browser.getTitle()).to.eventually.eq(login.pageTitle);
+        });
+    });
+    
+	it("should be accessible at " + login.httpsAddress, function () {
+        return browser.get(login.httpsAddress).then(function () {
+            return expect(browser.getTitle()).to.eventually.eq(login.pageTitle);
+        });
+    });
 
     it("should also be accessible at " + login.httpAddress, function () {
         return browser.get(login.httpAddress).then(function () {
