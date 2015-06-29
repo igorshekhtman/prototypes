@@ -25,11 +25,15 @@ describe("Progress report Login page", function () {
         });
     });
 
+    /**
+
     it("should also be accessible at " + login.httpAddress, function () {
         return browser.get(login.httpAddress).then(function () {
             return expect(browser.getTitle()).to.eventually.eq(login.pageTitle);
         });
     });
+
+     */
 
     /**
 
