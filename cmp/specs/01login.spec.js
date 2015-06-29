@@ -39,7 +39,7 @@ describe("Progress report Login page", function () {
 
     it('should fail to login with bad username and password', function () {
         return login.getPage().then(function () {
-            return login.login('someuser', 'somepass').then(function () {
+            return login.login('someinvaliduser', 'someinvalidpass').then(function () {
                 return expect(login.getFlashMessage()).to.eventually.eq(false);
             });
         });
