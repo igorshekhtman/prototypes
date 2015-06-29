@@ -43,7 +43,7 @@ describe("Progress report Login page", function () {
         });
     });
 
-    /**
+
 
     it('should fail to login with bad username and password', function () {
         return login.getPage().then(function () {
@@ -60,6 +60,8 @@ describe("Progress report Login page", function () {
             });
         });
     });
+
+    /**
 
     it('should successfully logout after login', function () {
         return login.getPage().then(function () {
