@@ -62,7 +62,7 @@ describe("Progress report Login page", function () {
         });
     });
 
-    /**
+
 
     it('should successfully logout after login', function () {
         return login.getPage().then(function () {
@@ -84,5 +84,4 @@ describe("Progress report Login page", function () {
             ];
         });
     });
-    */
 });
