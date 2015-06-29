@@ -3,23 +3,10 @@ exports.config={
 		browserName: 'chrome'
 	},
 
-	onPrepare: function() {
-
-
-
-		browser.ignoreSynchronization = true;
-		browser.driver.manage().window().maximize();
-		browser.getCapabilities().then(function (cap) {
-			browser.browserName = cap.caps_.browserName;
-			browser.browserVersion = cap.caps_.version;
-		});
-
-	},
-
 	mochaOpts:{
 		reporter:'spec',
 		enableTimeouts:false
 	},
 	framework:'mocha',
-	specs:['specs/*.spec.js']
+	specs:['specs/00*.spec.js']
 };
