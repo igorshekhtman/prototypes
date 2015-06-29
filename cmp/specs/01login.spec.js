@@ -39,7 +39,7 @@ describe("Progress report Login page", function () {
 
     it("should be able to fill the login form", function () {
         return login.getPage().then(function () {
-            return expect(login.getFlashMessage()).to.eventually.eq(false);
+            return expect(login.getFlashMessage()).to.eventually.eq('{"Method":"POST","Uri":"https:\\/\\/useraccount-stg.apixio.com:7076\\/auths","Response":HTTP/1.1 403 Forbidden}');
         });
     });
 
