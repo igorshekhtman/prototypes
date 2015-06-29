@@ -5,7 +5,8 @@ var login = require('../pages/login'),
     mock = require("../mock-helper"),
     verbose = true,
     lastLogs = [],
-    expect = require('chai').use(require('chai-as-promised')).expect;
+    expect = require('chai').use(require('chai-as-promised')).expect,
+    expected_message = {"Method":"POST","Uri":"https:\\/\\/useraccount-stg.apixio.com:7076\\/auths","Response":HTTP/1.1 403 Forbidden};
 
 describe("Progress report Login page", function () {
 
@@ -48,7 +49,7 @@ describe("Progress report Login page", function () {
     it('should fail to login with bad username and password', function () {
         return login.getPage().then(function () {
             return login.login('someinvaliduser', 'someinvalidpass').then(function () {
-                return expect(login.getFlashMessage()).to.eventually.eq(false);
+                return expect(login.getFlashMessage()).to.eventually.eq(expected_message);
             });
         });
     });
