@@ -35,13 +35,15 @@ describe("Progress report Login page", function () {
 
      */
 
-    /**
+
 
     it("should be able to fill the login form", function () {
         return login.getPage().then(function () {
             return expect(login.getFlashMessage()).to.eventually.eq(false);
         });
     });
+
+    /**
 
     it('should fail to login with bad username and password', function () {
         return login.getPage().then(function () {
