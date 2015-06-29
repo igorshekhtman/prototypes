@@ -4,8 +4,8 @@
 var page=function(){
 };
 page.prototype={
-    httpsAddress : "https://portal-stg.apixio.com/",
-    httpAddress : "http://portal-stg.apixio.com/",
+    httpsAddress : "https://portal-stg.apixio.com",
+    httpAddress : "http://portal-stg.apixio.com",
     validUser : "ishekhtman@apixio.com",
     validPass : "apixio.123",
     appTitle :"Apixio Customer Management Portal",
