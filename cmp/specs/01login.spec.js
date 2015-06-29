@@ -6,7 +6,7 @@ var login = require('../pages/login'),
     verbose = true,
     lastLogs = [],
     expect = require('chai').use(require('chai-as-promised')).expect,
-    expected_message = {"Method":"POST","Uri":"https:\\/\\/useraccount-stg.apixio.com:7076\\/auths","Response":HTTP/1.1 403 Forbidden};
+    expected_message = "{\"Method\":\"POST\",\"Uri\":\"https:\\/\\/useraccount-stg.apixio.com:7076\\/auths\",\"Response\":HTTP/1.1 403 Forbidden}";
 
 describe("Progress report Login page", function () {
 
