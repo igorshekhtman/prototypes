@@ -68,7 +68,7 @@ describe("Progress report Login page", function () {
         return login.getPage().then(function () {
             return login.login(this.validUser, this.validPass).then(function () {
                 return login.logout().then(function () {
-                    return expect(login.getFlashMessage()).to.eventually.include('Successfully Logged Out');
+                    return expect(browser.getTitle()).to.eventually.eq(login.pageTitle);
                 });
             });
         });
