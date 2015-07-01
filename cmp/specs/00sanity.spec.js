@@ -10,4 +10,14 @@ describe("Sanity Test to ensure the correctness of protractor tests",function(){
             expect(browser.getTitle()).to.eventually.equal(config.loginTitle);
         });
     });
+    it("Should be able to see the login page",function(){
+        browser.get(config.serverAddress).then(function(){
+            expect(browser.getTitle()).to.eventually.equal(config.loginTitle);
+        });
+    });
+    it("Should be able to see the login page",function(){
+        browser.get(config.serverAddress).then(function(){
+            expect(browser.getTitle()).to.eventually.equal(config.loginTitle);
+        });
+    });
 });
