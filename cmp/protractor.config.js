@@ -2,11 +2,11 @@ exports.config={
 	capabilities: {
 		browserName: 'chrome'
 	},
-
-	mochaOpts:{
-		reporter:'spec',
-		enableTimeouts:false
+	apxOpts:{
+		enableTimeouts:false,
+		suiteKey:"cmp"
 	},
-	framework:'mocha',
+	framework:"custom",
+	frameworkPath:"../apixio-mocha.js",
 	specs:['specs/00*.spec.js']
 };
