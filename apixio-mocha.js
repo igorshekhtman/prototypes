@@ -1,7 +1,3 @@
-/**
- * Created by ishekhtman on 6/30/15.
- */
-
 var q = require('q'),
     redis = require("./qaserver/modules/redis"),
     _ = require("lodash");

@@ -1,7 +1,14 @@
 doctype html
-html
+html(ng-app="#{angularApp}")
   head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
     title= title
+    link(rel='stylesheet', href='/lib/bootstrap.min.css')
+    link(rel='stylesheet', href='/lib/bootstrap-theme.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     block content
+    script(src='/lib/angular.min.js')
+    script(src='/lib/angular-sanitize.min.js')
+    script(src='/lib/angular-ui-router.min.js')
