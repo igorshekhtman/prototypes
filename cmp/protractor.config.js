@@ -3,10 +3,21 @@ exports.config={
 		browserName: 'chrome'
 	},
 
-	mochaOpts:{
-		reporter:'spec',
-		enableTimeouts:false
+    //restartBrowserBetweenTests: true,
+
+	onPrepare: function() {
+
+        //var width = 1280;
+        //var height = 1024;
+        //browser.ignoreSynchronization = true;
+        //browser.driver.manage().window().setSize(width, height);
 	},
-	framework:'mocha',
+
+	apxOpts:{
+		enableTimeouts:false,
+		suiteKey:"cmp"
+	},
+	framework:'custom',
+	frameworkPath:"../mocha.js",
 	specs:['specs/00*.spec.js']
 };
