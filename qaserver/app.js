@@ -8,7 +8,13 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+var redis=require("./modules/redis");
+
 var app = express();
+
+var redisPromise=redis.connect("127.0.0.1",6379,{}).then(function(client){
+  return redis.initialize(client);
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -21,6 +27,17 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(function(req,res,next){
+  redisPromise.then(function(redis){
+    req.redis=redis;
+    next();
+  },function(error){
+    var err=new Error("Could not connect to redis database , error: " + error);
+    err.status=504;
+    next(err);
+  });
+});
 
 app.use('/', routes);
 app.use('/users', users);
